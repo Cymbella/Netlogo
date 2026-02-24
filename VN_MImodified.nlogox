@@ -128,6 +128,9 @@ end
         <update>plot (count turtles with [resistant?]) / (count turtles) * 100</update>
       </pen>
     </plot>
+    <monitor x="745" precision="0" y="25" height="60" fontSize="11" width="100" display="Susceptible">count turtles with [not infected? and not resistant?]</monitor>
+    <monitor x="855" precision="0" y="25" height="60" fontSize="11" width="100" display="Infected">count turtles with [infected?]</monitor>
+    <monitor x="965" precision="0" y="25" height="60" fontSize="11" width="100" display="Resistant">count turtles with [resistant?]</monitor>
   </widgets>
   <info><![CDATA[
 ## HOW TO CITE
