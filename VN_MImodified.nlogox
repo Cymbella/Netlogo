@@ -93,7 +93,7 @@ to do-virus-checks
     [
       ifelse random 100 < gain-resistance-chance
              [ become-resistant ]
-      [ become-susceptible ]
+             [ become-susceptible ]
         
     ]
   ]
@@ -129,9 +129,9 @@ end
         <update>plot (count turtles with [resistant?]) / (count turtles) * 100</update>
       </pen>
     </plot>
-    <monitor x="745" precision="0" y="25" height="60" fontSize="11" width="100" display="Susceptible">count turtles with [not infected? and not resistant?]</monitor>
-    <monitor x="855" precision="0" y="25" height="60" fontSize="11" width="100" display="Infected">count turtles with [infected?]</monitor>
-    <monitor x="965" precision="0" y="25" height="60" fontSize="11" width="100" display="Resistant">count turtles with [resistant?]</monitor>
+    <monitor x="745" precision="2" y="25" height="60" fontSize="11" width="100" display="Susceptible %">100 * count turtles with [not infected? and not resistant?] / count turtles</monitor>
+    <monitor x="855" precision="2" y="25" height="60" fontSize="11" width="100" display="Infected %">100 * count turtles with [infected?] / count turtles</monitor>
+    <monitor x="965" precision="2" y="25" height="60" fontSize="11" width="100" display="Resistant %">100 * count turtles with [resistant?] / count turtles</monitor>
   </widgets>
   <info><![CDATA[
 ## HOW TO CITE
