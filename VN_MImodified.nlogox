@@ -92,8 +92,9 @@ to do-virus-checks
     if random 100 < recovery-chance
     [
       ifelse random 100 < gain-resistance-chance
+      [ become-susceptible ]
         [ become-resistant ]
-        [ become-susceptible ]
+        
     ]
   ]
 end
